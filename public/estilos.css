@@ -1,0 +1,52 @@
+h1 {
+  font-size: 36px; /* tamaño de la fuente en píxeles */
+  color: #ce5c5c; /* color del texto en hexadecimal */
+  font-weight: bold; /* negrita */
+  text-align: center; /* alineación en el centro */
+  margin-top: 20px; /* margen superior de 20 píxeles */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card-content p {
+  margin: 10px 0;
+}
+.boton-agregar {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Borde */
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espacio entre el borde y el contenido */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Decoración del texto */
+  display: inline-block; /* Display */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Margen */
+  cursor: pointer; /* Cursor */
+  border-radius: 10px; /* Radio de borde */
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/mascotas.css">
+	<title>Formulario de Registro de Mascotas</title>
+</head>
+<body>
+
+	<h1>Registro de Mascotas</h1>
+
+	<form action="/nueva" method="post" id="form-mascotas" enctype="multipart/form-data">
+  <label for="id_mascota">ID Mascota:</label>
+  <input type="text" id="id_mascota" name="id_mascota" required>
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
+
+  <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+  <label for="especie">Especie:</label>
+  <input type="text" id="especie" name="especie" required>
+
+  <label for="raza">Raza:</label>
+  <input type="text" id="raza" name="raza" required>
+
+  <label for="sexo">Sexo:</label>
+  <select id="sexo" name="sexo" required>
+    <option value="macho">Macho</option>
+    <option value="hembra">Hembra</option>
+  </select>
+
+  <label for="id_cliente">ID Cliente:</label>
+  <input type="text" id="id_cliente" name="id_cliente" required>
+
+  <label for="imagen">Imagen:</label>
+  <input type="file" id="imagen" name="file">
+
+  <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
