@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/estilos.css">
+  <title>Lista de Clientes y Mascotas</title>
+</head>
+<body>
+  <h1>VETERINARIA "PETS"</h1>
+
+  <div class="card-container">
+    <% for (let i = 0; i < resultados.length; i++) { %>
+      <div class="card">
+        <div class="card-image">
+          <img src="/imagenes/resultados[i].mascotas.imagen %>" alt="">
+        </div>
+        <div class="card-content">
+          <h2><%= resultados[i].mascota_nombre %></h2>
+          <p><strong>Raza:</strong> <%= resultados[i].raza %></p>
+          <p><strong>Dueño:</strong> <%= resultados[i].cliente_nombre %></p>
+          <p><strong>Membresía:</strong> <%= resultados[i].tipo_membresia %></p>
+        </div>
+      </div>
+    <% } %>
+  </div>
+  
+  
+  <br>
+  
+  <div style="text-align: center;">
+  <button class="boton-agregar" onclick="window.location.href='/clientes/agregar'">Agregar Nuevo Cliente</button>
+  <button class="boton-agregar" onclick="window.location.href='/membresia/nuevo'">Agregar Nueva Membresia</button>
+  <button class="boton-agregar" onclick="window.location.href='/mascotas/nueva'">Agregar Nueva Mascota</button>
+</div>
+</body>
+</html>

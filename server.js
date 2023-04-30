@@ -116,7 +116,7 @@ app.get('/mascotas/nueva', (req, res) => {
 
 // Iniciar el servidor
 app.get("/index", (req, res) =>{
-  return res.redirect("index.ejs");
+  return res.redirect("index.html");
 }).listen(3000);
 
 console.log('Escuchando el puerto 3000');
